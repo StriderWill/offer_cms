@@ -12,12 +12,12 @@
 <br>
 <p>
 	<strong>Description:</strong><br>
-	<%= @offers.description %>
+	<%= simple_format(strip_tags(@offers.description)) %>
 </p>
 <br>
 <p>
 	<strong>House Rules:</strong><br>
-	<%= @offers.house_rules %>
+	<%= simple_format(strip_tags(@offers.house_rules)) %>
 </p>
 
 <%= link_to "Delete", offers_delete_path %> |

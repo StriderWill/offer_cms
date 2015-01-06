@@ -10919,3 +10919,2527 @@ ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-02 16:11:50 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OffersController#index as HTML
+  [1m[35mOffer Load (0.2ms)[0m  SELECT "offers".* FROM "offers"
+  Rendered offers/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 75ms (Views: 65.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-02 16:11:50 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-02 16:11:50 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-02 16:11:50 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-02 16:11:50 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.6ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (339.5ms)
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-02 16:11:58 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.2ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-02 16:11:58 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (336.1ms)
+
+
+Started GET "/offers/1/edit" for 127.0.0.1 at 2015-01-02 16:12:00 +0100
+Processing by OffersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered offers/_form.html.erb (12.6ms)
+  Rendered offers/edit.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-02 16:12:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (337.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-03 14:48:00 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OffersController#index as HTML
+  [1m[35mOffer Load (1.2ms)[0m  SELECT "offers".* FROM "offers"
+  Rendered offers/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 78ms (Views: 67.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-03 14:48:00 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-03 14:48:00 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-03 14:48:00 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-03 14:48:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.7ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (361.4ms)
+
+
+Started GET "/offers/1/edit" for 127.0.0.1 at 2015-01-03 14:48:08 +0100
+Processing by OffersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.3ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/_form.html.erb (16.9ms)
+  Rendered offers/edit.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 85ms (Views: 81.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-03 14:48:08 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (349.9ms)
+
+
+Started PATCH "/offers/1" for 127.0.0.1 at 2015-01-03 14:48:13 +0100
+Processing by OffersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K22fdXHRkWqvkEdwtQT61ee0n8DFrvLXSqo/JiF0IL4=", "offer"=>{"code"=>"BAFQOFP1", "title"=>"Nostalgic stay, central location 40", "description"=>"You want to discover the latest trends Leipzig? Whether the fair, go shopping or to the growing arts and culture scene to know, you are in the right place. Not only our central location and excellent transport links to the city center, railway station and the zoo are a good argument, because you can expect in an Art Nouveau building from 1912, a beautifully restored 217qm apartment!\r\n\r\nAnd it can put in line breaks for you?\r\n\r\nI'm not sure if it can. .,z/.c,zxc.,zx/c.xz,c\r\n\r\n\r\n\r\nLet's see :D\r\n", "house_rules"=>"New house rules added"}, "commit"=>"Update Offer", "id"=>"1"}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "offers" SET "description" = ?, "updated_at" = ? WHERE "offers"."id" = 1  [["description", "You want to discover the latest trends Leipzig? Whether the fair, go shopping or to the growing arts and culture scene to know, you are in the right place. Not only our central location and excellent transport links to the city center, railway station and the zoo are a good argument, because you can expect in an Art Nouveau building from 1912, a beautifully restored 217qm apartment!\r\n\r\nAnd it can put in line breaks for you?\r\n\r\nI'm not sure if it can. .,z/.c,zxc.,zx/c.xz,c\r\n\r\n\r\n\r\nLet's see :D\r\n"], ["updated_at", "2015-01-03 13:48:13.217272"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/?id=1
+Completed 302 Found in 9ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/?id=1" for 127.0.0.1 at 2015-01-03 14:48:13 +0100
+Processing by OffersController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.2ms)[0m  SELECT "offers".* FROM "offers"
+  Rendered offers/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-03 14:48:13 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (337.3ms)
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-03 14:48:15 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-03 14:48:15 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (356.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 21:07:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OffersController#index as HTML
+  [1m[35mOffer Load (1.2ms)[0m  SELECT "offers".* FROM "offers"
+  Rendered offers/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 79ms (Views: 68.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:07:23 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:07:23 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.9ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (348.3ms)
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:07:24 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:07:24 +0100
+
+
+Started GET "/offers/1/edit" for 127.0.0.1 at 2015-01-05 21:07:44 +0100
+Processing by OffersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.2ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/_form.html.erb (24.5ms)
+  Rendered offers/edit.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 82ms (Views: 79.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:07:44 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:07:44 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:07:44 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:07:44 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (326.8ms)
+
+
+Started GET "/offers" for 127.0.0.1 at 2015-01-05 21:07:56 +0100
+Processing by OffersController#index as HTML
+  [1m[35mOffer Load (0.2ms)[0m  SELECT "offers".* FROM "offers"
+  Rendered offers/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:07:56 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:07:56 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:07:56 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:07:56 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.8ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (335.1ms)
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-05 21:08:00 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:08:00 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:08:00 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:08:00 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:08:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (333.1ms)
+
+
+Started GET "/offers/1/edit" for 127.0.0.1 at 2015-01-05 21:08:11 +0100
+Processing by OffersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered offers/_form.html.erb (2.7ms)
+  Rendered offers/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:08:11 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:08:11 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (331.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:08:12 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:08:12 +0100
+
+
+Started GET "/offers/1/edit" for 127.0.0.1 at 2015-01-05 21:25:51 +0100
+Processing by OffersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/_form.html.erb (5.3ms)
+  Rendered offers/edit.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:25:51 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (347.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:25:52 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:25:52 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:25:52 +0100
+
+
+Started PATCH "/offers/1" for 127.0.0.1 at 2015-01-05 21:26:00 +0100
+Processing by OffersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hnmvKgCvjjjKN4TqBHFW83xHRHBM6jEKNaGimqLQfkI=", "offer"=>{"code"=>"BAFQOFP1", "title"=>"Nostalgic stay, central location 40", "description"=>"You want to discover the latest trends Leipzig? Whether the fair, go shopping or to the growing arts and culture scene to know, you are in the right place. Not only our central location and excellent transport links to the city center, railway station and the zoo are a good argument, because you can expect in an Art Nouveau building from 1912, a beautifully restored 217qm apartment!\r\n\r\nAnd it can put in line breaks for you?\r\n\r\nI'm not sure if it can. .,z/.c,zxc.,zx/c.xz,c\r\n\r\ndfsdfl;d'sflsd\r\n\r\n\r\nLet's see :D\r\n", "house_rules"=>"New house rules added"}, "commit"=>"Update Offer", "id"=>"1"}
+  [1m[35mOffer Load (0.2ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "offers" SET "description" = ?, "updated_at" = ? WHERE "offers"."id" = 1  [["description", "You want to discover the latest trends Leipzig? Whether the fair, go shopping or to the growing arts and culture scene to know, you are in the right place. Not only our central location and excellent transport links to the city center, railway station and the zoo are a good argument, because you can expect in an Art Nouveau building from 1912, a beautifully restored 217qm apartment!\r\n\r\nAnd it can put in line breaks for you?\r\n\r\nI'm not sure if it can. .,z/.c,zxc.,zx/c.xz,c\r\n\r\ndfsdfl;d'sflsd\r\n\r\n\r\nLet's see :D\r\n"], ["updated_at", "2015-01-05 20:26:00.463847"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/?id=1
+Completed 302 Found in 9ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/?id=1" for 127.0.0.1 at 2015-01-05 21:26:00 +0100
+Processing by OffersController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.2ms)[0m  SELECT "offers".* FROM "offers"
+  Rendered offers/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:26:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (360.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:26:01 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:26:01 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:26:01 +0100
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-05 21:26:03 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 62ms (Views: 60.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:26:03 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:26:03 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (346.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:26:03 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:26:03 +0100
+
+
+Started GET "/offers/1/edit" for 127.0.0.1 at 2015-01-05 21:27:39 +0100
+Processing by OffersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered offers/_form.html.erb (2.7ms)
+  Rendered offers/edit.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:27:39 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:27:39 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:27:39 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:27:39 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (346.6ms)
+
+
+Started PATCH "/offers/1" for 127.0.0.1 at 2015-01-05 21:27:57 +0100
+Processing by OffersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hnmvKgCvjjjKN4TqBHFW83xHRHBM6jEKNaGimqLQfkI=", "offer"=>{"code"=>"BAFQOFP1", "title"=>"Nostalgic stay, central location 40", "description"=>"You want to discover the latest trends Leipzig? Whether the fair, go shopping or to the growing arts and culture scene to know, you are in the right place. Not only our central location and excellent transport links to the city center, railway station and the zoo are a good argument, because you can expect in an Art Nouveau building from 1912, a beautifully restored 217qm apartment!\r\n\r\nAnd it can put in line breaks for you?\r\n\r\nI'm not sure if it can. .,z/.c,zxc.,zx/c.xz,c\r\n\r\ndfsdfl;d'sflsd\r\n\r\n\r\nLet's see :D\r\n", "house_rules"=>"New house rules added\r\n\r\n\r\nHtml"}, "commit"=>"Update Offer", "id"=>"1"}
+  [1m[36mOffer Load (0.2ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "offers" SET "house_rules" = ?, "updated_at" = ? WHERE "offers"."id" = 1[0m  [["house_rules", "New house rules added\r\n\r\n\r\nHtml"], ["updated_at", "2015-01-05 20:27:57.170126"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/?id=1
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/?id=1" for 127.0.0.1 at 2015-01-05 21:27:57 +0100
+Processing by OffersController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.3ms)[0m  [1mSELECT "offers".* FROM "offers"[0m
+  Rendered offers/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:27:57 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:27:57 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:27:57 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:27:57 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (337.2ms)
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-05 21:28:08 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.2ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:08 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:08 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:28:08 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (348.4ms)
+
+
+Started GET "/offers/1/edit" for 127.0.0.1 at 2015-01-05 21:28:12 +0100
+Processing by OffersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/_form.html.erb (2.3ms)
+  Rendered offers/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:12 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:12 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:28:12 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (336.5ms)
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:13 +0100
+
+
+Started PATCH "/offers/1" for 127.0.0.1 at 2015-01-05 21:28:42 +0100
+Processing by OffersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hnmvKgCvjjjKN4TqBHFW83xHRHBM6jEKNaGimqLQfkI=", "offer"=>{"code"=>"BAFQOFP1", "title"=>"Nostalgic stay, central location 40", "description"=>"You want to discover the latest trends Leipzig? Whether the fair, go shopping or to the growing arts and culture scene to know, you are in the right place. Not only our central location and excellent transport links to the city center, railway station and the zoo are a good argument, because you can expect in an Art Nouveau building from 1912, a beautifully restored 217qm apartment!\r\n\r\nAnd it can put in line breaks for you?\r\n\r\nI'm not sure if it can. .,z/.c,zxc.,zx/c.xz,c\r\n\r\ndfsdfl;d'sflsd\r\n\r\n\r\nLet's see :D\r\n\r\n<br>\r\n<a href= \"www.google.com\"> Google!</a>", "house_rules"=>"New house rules added\r\n\r\n\r\nHtml"}, "commit"=>"Update Offer", "id"=>"1"}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "offers" SET "description" = ?, "updated_at" = ? WHERE "offers"."id" = 1  [["description", "You want to discover the latest trends Leipzig? Whether the fair, go shopping or to the growing arts and culture scene to know, you are in the right place. Not only our central location and excellent transport links to the city center, railway station and the zoo are a good argument, because you can expect in an Art Nouveau building from 1912, a beautifully restored 217qm apartment!\r\n\r\nAnd it can put in line breaks for you?\r\n\r\nI'm not sure if it can. .,z/.c,zxc.,zx/c.xz,c\r\n\r\ndfsdfl;d'sflsd\r\n\r\n\r\nLet's see :D\r\n\r\n<br>\r\n<a href= \"www.google.com\"> Google!</a>"], ["updated_at", "2015-01-05 20:28:42.917107"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/?id=1
+Completed 302 Found in 4ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/?id=1" for 127.0.0.1 at 2015-01-05 21:28:42 +0100
+Processing by OffersController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.2ms)[0m  SELECT "offers".* FROM "offers"
+  Rendered offers/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:43 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:43 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:28:43 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (353.1ms)
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-05 21:28:45 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:45 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:45 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:28:45 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (352.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:28:45 +0100
+
+
+Started GET "/offers/1/www.google.com" for 127.0.0.1 at 2015-01-05 21:28:50 +0100
+
+ActionController::RoutingError (No route matches [GET] "/offers/1/www.google.com"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (329.5ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:30:49 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:30:49 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:30:49 +0100
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-05 21:33:28 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:33:28 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (358.9ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:33:28 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:33:28 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:33:28 +0100
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-05 21:33:30 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:33:30 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:33:30 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (343.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:33:31 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:33:31 +0100
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-05 21:34:10 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:10 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:10 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:34:10 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (341.7ms)
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:11 +0100
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-05 21:34:12 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:12 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:12 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:34:12 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (334.3ms)
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:13 +0100
+
+
+Started GET "/offers/1/edit" for 127.0.0.1 at 2015-01-05 21:34:15 +0100
+Processing by OffersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered offers/_form.html.erb (3.9ms)
+  Rendered offers/edit.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:15 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:34:15 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (363.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:16 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:16 +0100
+
+
+Started PATCH "/offers/1" for 127.0.0.1 at 2015-01-05 21:34:18 +0100
+Processing by OffersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hnmvKgCvjjjKN4TqBHFW83xHRHBM6jEKNaGimqLQfkI=", "offer"=>{"code"=>"BAFQOFP1", "title"=>"Nostalgic stay, central location 40", "description"=>"You want to discover the latest trends Leipzig? Whether the fair, go shopping or to the growing arts and culture scene to know, you are in the right place. Not only our central location and excellent transport links to the city center, railway station and the zoo are a good argument, because you can expect in an Art Nouveau building from 1912, a beautifully restored 217qm apartment!\r\n\r\nAnd it can put in line breaks for you?\r\n\r\nI'm not sure if it can. .,z/.c,zxc.,zx/c.xz,c\r\n\r\ndfsdfl;d'sflsd\r\n\r\n\r\nLet's see :D\r\n\r\n<br>\r\n<a href= \"www.google.com\"> Google!</a>", "house_rules"=>"New house rules added\r\n\r\n\r\nHtml"}, "commit"=>"Update Offer", "id"=>"1"}
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/?id=1
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/?id=1" for 127.0.0.1 at 2015-01-05 21:34:18 +0100
+Processing by OffersController#index as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.2ms)[0m  SELECT "offers".* FROM "offers"
+  Rendered offers/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:18 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:34:18 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (344.1ms)
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:19 +0100
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-05 21:34:21 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.2ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:21 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:21 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:34:21 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:34:21 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (350.9ms)
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-05 21:40:11 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:40:11 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:40:11 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:40:11 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:40:11 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (356.5ms)
+
+
+Started GET "/offers/1/show" for 127.0.0.1 at 2015-01-05 21:59:26 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.2ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered offers/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 63ms (Views: 52.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:59:26 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:59:26 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:59:26 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (345.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:59:27 +0100
+
+
+Started GET "/offers" for 127.0.0.1 at 2015-01-05 21:59:29 +0100
+Processing by OffersController#index as HTML
+  [1m[35mOffer Load (0.2ms)[0m  SELECT "offers".* FROM "offers"
+  Rendered offers/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:59:29 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:59:29 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:59:29 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (356.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:59:30 +0100
+
+
+Started GET "/offers/new" for 127.0.0.1 at 2015-01-05 21:59:42 +0100
+Processing by OffersController#new as HTML
+  Rendered offers/_form.html.erb (2.7ms)
+  Rendered offers/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 69ms (Views: 68.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 21:59:42 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 21:59:42 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 21:59:42 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 21:59:42 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (362.8ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2015-01-05 21:59:53 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hnmvKgCvjjjKN4TqBHFW83xHRHBM6jEKNaGimqLQfkI=", "offer"=>{"code"=>"BAFQOFP1", "title"=>"Wkjsdkjasld", "description"=>"dsasd", "house_rules"=>"dslkajsdlkas"}, "commit"=>"Create Offer"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `offer_code' for #<Offer:0x007fe598ab9430>):
+  app/controllers/offers_controller.rb:16:in `create'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (358.2ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2015-01-05 22:00:44 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hnmvKgCvjjjKN4TqBHFW83xHRHBM6jEKNaGimqLQfkI=", "offer"=>{"code"=>"BAFQOFP1", "title"=>"Wkjsdkjasld", "description"=>"dsasd", "house_rules"=>"dslkajsdlkas"}, "commit"=>"Create Offer"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "offers" ("code", "created_at", "description", "house_rules", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["code", "BAFQOFP1"], ["created_at", "2015-01-05 21:00:44.094626"], ["description", "dsasd"], ["house_rules", "dslkajsdlkas"], ["title", "Wkjsdkjasld"], ["updated_at", "2015-01-05 21:00:44.094626"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 22:00:44 +0100
+Processing by OffersController#index as HTML
+  [1m[35mOffer Load (0.2ms)[0m  SELECT "offers".* FROM "offers"
+  Rendered offers/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 22:00:44 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.7ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (340.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 22:00:44 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 22:00:44 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 22:00:44 +0100
+
+
+Started GET "/offers/8/delete" for 127.0.0.1 at 2015-01-05 22:00:53 +0100
+Processing by OffersController#delete as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mOffer Load (0.2ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 500 Internal Server Error in 28ms
+
+ActionView::MissingTemplate (Missing template offers/delete, application/delete with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/wimdu/rails_projects/offer_cms/app/views"
+  * "/Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/devise-3.4.1/app/views"
+):
+  actionview (4.1.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.8) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-01-05 22:00:56 +0100
+Processing by OffersController#index as HTML
+  [1m[35mOffer Load (0.2ms)[0m  SELECT "offers".* FROM "offers"
+  Rendered offers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 22:00:56 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 22:00:56 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 22:00:56 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (348.9ms)
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 22:00:57 +0100
+
+
+Started GET "/offers/8/show" for 127.0.0.1 at 2015-01-05 22:01:00 +0100
+Processing by OffersController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered offers/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 22:01:00 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 22:01:00 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (352.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 22:01:01 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 22:01:01 +0100
+
+
+Started GET "/offers/8/delete" for 127.0.0.1 at 2015-01-05 22:01:03 +0100
+Processing by OffersController#delete as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 8]]
+Completed 500 Internal Server Error in 27ms
+
+ActionView::MissingTemplate (Missing template offers/delete, application/delete with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/wimdu/rails_projects/offer_cms/app/views"
+  * "/Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/devise-3.4.1/app/views"
+):
+  actionview (4.1.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.8) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/offers/1/delete" for 127.0.0.1 at 2015-01-05 22:01:09 +0100
+Processing by OffersController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.1ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 27ms
+
+ActionView::MissingTemplate (Missing template offers/delete, application/delete with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/wimdu/rails_projects/offer_cms/app/views"
+  * "/Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/devise-3.4.1/app/views"
+):
+  actionview (4.1.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.8) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/offers/2/delete" for 127.0.0.1 at 2015-01-05 22:01:13 +0100
+Processing by OffersController#delete as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1  [["id", 2]]
+Completed 500 Internal Server Error in 27ms
+
+ActionView::MissingTemplate (Missing template offers/delete, application/delete with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/wimdu/rails_projects/offer_cms/app/views"
+  * "/Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/devise-3.4.1/app/views"
+):
+  actionview (4.1.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.8) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/offers/new" for 127.0.0.1 at 2015-01-05 22:01:41 +0100
+Processing by OffersController#new as HTML
+  Rendered offers/_form.html.erb (5.9ms)
+  Rendered offers/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 62ms (Views: 59.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2015-01-05 22:01:41 +0100
+
+
+Started GET "/assets/rails_bootstrap_forms.css?body=1" for 127.0.0.1 at 2015-01-05 22:01:41 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-01-05 22:01:41 +0100
+
+
+Started GET "/javascripts/defaults.js" for 127.0.0.1 at 2015-01-05 22:01:41 +0100
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/defaults.js"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (341.5ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2015-01-05 22:01:48 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hnmvKgCvjjjKN4TqBHFW83xHRHBM6jEKNaGimqLQfkI=", "offer"=>{"code"=>"BAFQOFP1", "title"=>"", "description"=>"", "house_rules"=>""}, "commit"=>"Create Offer"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `offer_code' for #<Offer:0x007fe5993ddae8>):
+  app/controllers/offers_controller.rb:16:in `create'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (353.5ms)
+
+
+Started GET "/offers/1/delete" for 127.0.0.1 at 2015-01-05 22:09:58 +0100
+Processing by OffersController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOffer Load (0.2ms)[0m  [1mSELECT  "offers".* FROM "offers"  WHERE "offers"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 28ms
+
+ActionView::MissingTemplate (Missing template offers/delete, application/delete with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/wimdu/rails_projects/offer_cms/app/views"
+  * "/Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/devise-3.4.1/app/views"
+):
+  actionview (4.1.8) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.8) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/wimdu/.rvm/rubies/ruby-2.2.0-preview1/lib/ruby/2.2.0/webrick/server.rb:320:in `block in start_thread'
+
+
+  Rendered /Users/wimdu/.rvm/gems/ruby-2.2.0-preview1/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
