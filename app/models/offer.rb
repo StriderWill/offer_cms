@@ -1,4 +1,3 @@
 class Offer < ActiveRecord::Base
- #validates :offer_code, uniqueness: true
-
+ validates :code, uniqueness: true, presence: true
 end
