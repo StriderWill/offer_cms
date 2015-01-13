@@ -8,7 +8,8 @@
     <%= yield(:head) %>
   </head>
   <body>
-    <div id="container">
+    <div class="container"> 
+      <!-- To comunicate !CSS to the html= instead "id" we rename it as a "class" -->
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
       <% end %>
