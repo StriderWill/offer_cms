@@ -1,27 +1,9 @@
- <%= form_for (@offer) do |f| %>
-
-	<div class="code">
-		<%= f.label :code %><br>
-		<%= f.text_field :code %>
-	</div>
-	<br>
-	<div class="title">
-		<%= f.label :title %><br>
-		<%= f.text_field :title, class: 'title_box' %>
-	</div>
-	<br>
-	<div class="description">
-		<%= f.label :description %><br>
-		<%= f.text_area :description, { class: 'text_area', :rows => 30 } %>
-	</div>
-	<br>
-	<div class="house_rules">
-		<%= f.label :house_rules %><br>
-		<%= f.text_area :house_rules, { class: 'text_area', :rows => 20 } %>
-	</div>
-	<br>
-	<div class="actions">
-		<%= f.submit %>
-	</div>
-	<br>
+ <%= bootstrap_form_for(@offer) do |f| %> 
+ <!-- #bootstrap_form_for? documentation? -->
+	<%= f.text_field :code %>
+	<%= f.text_field :title, class: 'title_box' %>
+	<%= f.text_area :description, { class: 'text_area', :rows => 30 } %>
+	<%= f.text_area :house_rules, { class: 'text_area', :rows => 20 } %>
+	<%= f.text_area :deadline, {class: 'text_area', :rows => 1} %>
+	<%= f.submit %>
 <% end %>
