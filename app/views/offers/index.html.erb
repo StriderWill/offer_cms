@@ -2,16 +2,27 @@
 
 <h2>A full list of all offers in the database</h2>
 
-<% @offers.each do |offer| %>
-<tr>
-  <td>Offer Code: <%= offer.code %></td><br>
-  <td>Offer Title: <%= offer.title %></td><br>
-  <%= link_to "Edit", edit_offer_path(offer.id) %>
-  <%= link_to "Show", offers_show_path(offer.id) %>
-  <%= link_to "Delete", offers_delete_path(offer.id) %><br><br>
-</tr>
-<% end %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Offer Code</th>
+      <th>Offer Title</th>
+      <th>Deadline</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @offers.each do |offer| %>
+    <tr>
+      <th scope="row"><%= offer.code %></th>
+      <td><%= offer.title %></td>
+      <td><%= offer.deadline %></td>
+      <td><%= link_to "Edit", edit_offer_path(offer.id) %></td>
+      <td><%= link_to "Show", offers_show_path(offer.id) %></td>
+      <td><%= link_to "Delete", offers_delete_path(offer.id) %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
 
-                          
-
-<%= link_to 'Add New Offer', new_offer_path %>
+<%= link_to 'Add New Offer', new_offer_path, class: "btn btn-default" %>

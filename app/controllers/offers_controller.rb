@@ -43,8 +43,8 @@ class OffersController < ApplicationController
   end
   
   private
-
+#strong params! :code... for Rails 4!
   def offer_params
-   	params.require(:offer).permit(:code, :title, :description, :house_rules)
+   	params.require(:offer).permit(:code, :title, :description, :house_rules, :deadline)
   end 
 end
