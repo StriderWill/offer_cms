@@ -4,6 +4,7 @@
 	<%= f.text_field :title, class: 'title_box' %>
 	<%= f.text_area :description, { class: 'text_area', :rows => 30 } %>
 	<%= f.text_area :house_rules, { class: 'text_area', :rows => 20 } %>
-	<%= f.text_area :deadline, {class: 'text_area', :rows => 1} %>
+    <%= f.text_field :deadline, {class: 'datepicker', "data-provide": strptime("datepicker", '%d/%m/%Y') } 
+    #DateTime.strptime("datepicker", '%d/%m/%Y')
 	<%= f.submit %>
 <% end %>
