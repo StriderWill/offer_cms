@@ -2,27 +2,27 @@
 
 <p>
 	<strong>Offer Code:</strong><br>
-	<%= @offers.code %>
+	<%= @offer.code %>
 </p>
 <br>
 <p>
 	<strong>Offer Title:</strong><br>
-	<%= @offers.title %>
+	<%= @offer.title %>
 </p>
 <br>
 <p>
 	<strong>Description:</strong><br>
-	<%= simple_format(strip_tags(@offers.description)) %>
+	<%= simple_format(strip_tags(@offer.description)) %>
 </p>
 <br>
 <p>
 	<strong>House Rules:</strong><br>
-	<%= simple_format(strip_tags(@offers.house_rules)) %>
+	<%= simple_format(strip_tags(@offer.house_rules)) %>
 </p>
 <br>
 <p>
 	<strong>Deadline:</strong><br>
-	<%= @offers.deadline.strftime("%Y/%m/%d") %>
+	<%= @offer.deadline.try(:strftime, "%Y/%m/%d") %>
 </p>
 <%= link_to "Delete", offers_delete_path %> |
 <%= link_to 'Edit', edit_offer_path %> |

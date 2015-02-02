@@ -16,7 +16,7 @@
     <tr>
       <th scope="row"><%= offer.code %></th>
       <td><%= offer.title %></td>
-      <td><%= offer.deadline %> </td>
+      <td><%= offer.deadline.try(:strftime, "%Y/%m/%d") %></td>
       <td><%= link_to "Edit", edit_offer_path(offer.id) %></td>
       <td><%= link_to "Show", offers_show_path(offer.id) %></td>
       <td><%= link_to "Delete", offers_delete_path(offer.id) %></td>
