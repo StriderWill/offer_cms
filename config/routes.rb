@@ -5,17 +5,18 @@ Rails.application.routes.draw do
 
 
   resources :offers
-  get 'offers/:id/delete' =>
-  'offers#delete', :as => :offers_delete  
   
-  get 'offers/new' => 
-  'offers#new', :as => :offers_new
+  #get 'offers/:id/delete' =>
+  #'offers#delete', :as => :offers_delete  
+  
+  #get 'offers/new' => 
+  #'offers#new', :as => :offers_new
 
-  get 'offers/:id/edit' => 
-  'offers#edit', :as => :offers_edit
+  #get 'offers/:id/edit' => 
+  #'offers#edit', :as => :offers_edit
 
-  get 'offers/:id/show' => 
-  'offers#show', :as => :offers_show
+  #get 'offers/:id/show' => 
+  #'offers#show', :as => :offers_show
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

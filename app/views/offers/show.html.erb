@@ -24,6 +24,6 @@
 	<strong>Deadline:</strong><br>
 	<%= @offer.deadline.try(:strftime, "%Y/%m/%d") %>
 </p>
-<%= link_to "Delete", offers_delete_path %> |
-<%= link_to 'Edit', edit_offer_path %> |
+<%= link_to "Delete", offer_path(@offer), method: :delete, data: {confirm: "Are you sure you want to delete this offer?"} %> |
+<%= link_to 'Edit', edit_offer_path(@offer) %> |
 <%= link_to 'Back', offers_path %>
