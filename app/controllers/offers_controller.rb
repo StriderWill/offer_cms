@@ -1,4 +1,5 @@
 class OffersController < ApplicationController
+  before_action :authenticate_user!
   def index
   	@offers = Offer.all
   end
@@ -41,10 +42,10 @@ class OffersController < ApplicationController
     Offer.find(params[:id]).destroy
     redirect_to(:action => 'index')
   end
-  
+
   private
 #strong params! :code... for Rails 4!
   def offer_params
    	params.require(:offer).permit(:code, :title, :description, :house_rules, :deadline)
-  end 
+  end
 end
