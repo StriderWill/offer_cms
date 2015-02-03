@@ -4,12 +4,12 @@ gem "nifty-generators", :group => :development
 
 gem "devise"
 
-gem 'bootstrap-sass', '~> 3.3.1'
+gem 'bootstrap-sass', '~> 3.3'
 gem 'bootstrap_form'
 # Bootstrap form to use to format form layouts
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '~> 4.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -45,7 +45,6 @@ gem 'bootstrap-datepicker-rails'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
 
 group :development do
   # Spring speeds up development by keeping your application running in the background.
