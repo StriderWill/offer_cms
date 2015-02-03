@@ -8,11 +8,10 @@
     <%= yield(:head) %>
   </head>
   <body>
-    <div class="container"> 
+    <%= render 'layouts/main_menu' %>
+    <div id="main">
       <!-- To comunicate !CSS to the html= instead "id" we rename it as a "class" -->
-      <% flash.each do |name, msg| %>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      <% end %>
+      <%= render 'layouts/flash_messages' %>
       <%= content_tag :h1, yield(:title) if show_title? %>
       <%= yield %>
     </div>
