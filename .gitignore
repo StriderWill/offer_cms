@@ -1,2 +1,4 @@
 /tmp
 /log/*.log
+/db/development.sqlite3
+/tmp/pids/server.pid
