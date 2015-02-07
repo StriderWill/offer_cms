@@ -17,12 +17,12 @@
       <th scope="row"><%= offer.code %></th>
       <td><%= offer.title %></td>
       <td><%= offer.deadline.try(:strftime, "%Y/%m/%d") %></td>
-      <td><%= link_to "Edit", edit_offer_path(offer.id) %></td>
-      <td><%= link_to "Show", offer_path(offer.id) %></td>
-      <td><%= link_to "Delete", offer_path(offer.id), method: :delete, data: {confirm: "Are you sure you want to delete this offer?"} %></td>
+      <td><%= link_to icon('edit', 'Edit'), edit_offer_path(offer.id), class: "btn btn-primary" %></td>
+      <td><%= link_to icon('newspaper-o', 'Show'), offer_path(offer.id), class: "btn btn-info" %></td>
+      <td><%= link_to icon('close', 'Delete', class: 'text-danger'), offer_path(offer.id), method: :delete, data: {confirm: "Are you sure you want to delete this offer?"}, class: "btn btn-danger" %></td>
     </tr>
   <% end %>
   </tbody>
 </table>
 
-<%= link_to 'Add New Offer', new_offer_path, class: "btn btn-default" %>
+<%= link_to  link_to icon('plus', 'Add New Offer'), new_offer_path, class: "btn btn-default" %>

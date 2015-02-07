@@ -1,9 +1,8 @@
- <%= bootstrap_form_for(@offer) do |f| %> 
- <!-- #bootstrap_form_for? documentation? -->
-	<%= f.text_field :code %>
-	<%= f.text_field :title, class: 'title_box' %>
-	<%= f.text_area :description, { class: 'text_area', :rows => 30 } %>
-	<%= f.text_area :house_rules, { class: 'text_area', :rows => 20 } %>
-  <%= f.text_field :deadline, {class: 'datepicker', "data-provide" => "datepicker", "data-date-format" => "yyyy-mm-dd" } %>
-	<%= f.submit %>
+<%= bootstrap_form_for(@offer) do |f| %>
+  <%= f.text_field :code %>
+  <%= f.text_field :title, class: 'title_box' %>
+  <%= f.text_area :description, { class: 'text_area', rows: 30 } %>
+  <%= f.text_area :house_rules, { class: 'text_area', rows: 20 } %>
+  <%= f.text_field :deadline, { class: 'datepicker', "data-provide" => "datepicker", "data-date-format" => "yyyy-mm-dd" } %>
+  <%= f.submit %>
 <% end %>
